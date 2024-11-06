@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter Tight", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   margin: 0;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -95,9 +95,11 @@ tbody tr:nth-child(odd) {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding: 1em 2em;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .nav-item {
@@ -108,6 +110,9 @@ tbody tr:nth-child(odd) {
 .nav-link {
   color: #fff;
   text-decoration: none;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  margin: 0 10px;
 }
 
 .active {
@@ -117,4 +122,108 @@ tbody tr:nth-child(odd) {
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+.candidate-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.candidate-card {
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.candidate-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.table .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reject-btn {
+  color: rgb(0, 0, 0);
+  background: red;
+  border: solid 3px black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.saved-candidates-container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  color: white;
+  background-color: #0a0a0a;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.candidates-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #333;
+  color: white;
+}
+
+.candidates-table th,
+.candidates-table td {
+  padding: 1rem;
+  border: 1px solid #444;
+  text-align: center;
+}
+
+.candidates-table th {
+  background-color: black;
+  font-weight: bold;
+}
+
+.candidates-table tbody tr:nth-child(odd) {
+  background-color: #333333;
+}
+
+.candidates-table tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reject-btn:hover {
+  color: #ff4d4d;
+}
+
+h1 {
+  text-align: center;
+}
+.accept-btn {
+  color: rgb(0, 0, 0);
+  background: green;
+  border: solid 3px black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
