@@ -10,7 +10,7 @@ export const searchGithub = async (): Promise<CandidateSearch[]> => {
       `${GITHUB_API_BASE_URL}/users?since=${start}`,
       {
         headers: {
-          Authorization: `Bearer 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`,
+          // Authorization: `Bearer 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`,
           Accept: "application/vnd.github+json",
         },
       }
@@ -33,7 +33,7 @@ export const getUserDetails = async (
       `${GITHUB_API_BASE_URL}/users/${username}`,
       {
         headers: {
-          Authorization: `Bearer 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`,
+          // Authorization: `Bearer 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`,
           Accept: "application/vnd.github+json",
         },
       }
